@@ -1,0 +1,188 @@
+/*
+Theme Name: CustomTheme
+Theme URI: https://wordpress.org/themes/CustomTheme/
+Author: the Rost team
+Author URI: http://rost.com.ua/
+Description: CustomTheme brings your site to life with immersive featured images and subtle animations. Our default theme works great in many languages, for any abilities, and on any device.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: CustomTheme
+Tags: custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+@font-face {
+  font-family: "Gilroy-Regular";
+  src: url("./assets/fonts/Gilroy-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b6b79f;
+  color: #131313;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+a {
+  color: #fefefe;
+  text-decoration: none;
+}
+a:hover {
+  color: #b6b79f;
+  text-decoration: underline;
+}
+
+.container {
+  min-width: 1440px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+::selection {
+  background-color: #38373A;
+  color: #b6b79f;
+}
+
+header {
+  background-color: #4c4d4d;
+  padding: 24px 0;
+}
+header .container {
+  display: flex;
+}
+
+.logo {
+  display: inline-block;
+  max-width: 160px;
+}
+
+.header-nav {
+  margin-left: auto;
+  font-size: 22px;
+  display: flex;
+}
+.header-nav .header-item {
+  padding: 12px 24px;
+  color: #fefefe;
+}
+
+.building-item, .floor-item {
+  fill: rgba(252, 244, 7, 0);
+  fill-opacity: 0.3;
+  stroke: rgba(252, 244, 7, 0);
+  cursor: pointer;
+  stroke-width: 4px;
+  transition: 0.1s;
+}
+.building-item:hover, .floor-item:hover {
+  fill: #fcf407;
+  stroke: #fcf407;
+}
+
+.building-sold:hover, .floor-sold:hover {
+  fill: #fff;
+  stroke: #fff;
+}
+
+.floor-item:hover {
+  fill: #07fc34;
+  stroke: none;
+}
+.floor-item .floor-border {
+  stroke: rgba(7, 252, 52, 0);
+  stroke-width: 4px;
+}
+.floor-item .floor-border:hover {
+  stroke: #fcf407;
+}
+.floor-item .floor-status {
+  fill-opacity: 1;
+}
+.floor-item .floor-status .floor-status-overlay {
+  fill: #fff;
+  stroke: #000;
+  stroke-width: 2px;
+}
+.floor-item .floor-status .floor-number .floor-number-overlay {
+  fill: rgba(19, 203, 244, 0.6117647059);
+  stroke: #000;
+  stroke-width: 2px;
+}
+.floor-item .floor-status .floor-number .floor-number-text {
+  font-size: 16px;
+  font-weight: 700;
+  fill: #000;
+}
+
+.active {
+  fill: #07fc34;
+  stroke: none;
+}
+
+.action .floor-status .floor-number .floor-number-overlay {
+  fill: rgba(71, 233, 87, 0.5725490196);
+}
+
+.reserved .floor-status .floor-number .floor-number-overlay {
+  fill: rgba(13, 16, 200, 0.5647058824);
+}
+
+.sold .floor-status .floor-number .floor-number-overlay {
+  fill: rgba(187, 53, 29, 0.7215686275);
+}
+
+h1 {
+  color: blue;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #38373A;
+  color: #fefefe;
+}
+
+.information-list {
+  display: flex;
+  gap: 12px;
+  padding: 24px 0;
+  font-size: 16px;
+}
+
+.information-item {
+  list-style: none;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #b6b79f;
+}
+.information-item a {
+  color: #b6b79f;
+  text-decoration: none;
+}
+.information-item a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#b6b79f">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
+    <title>Awesome Builder</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo">
+            <img src="assets/img/logo.png" alt="logo">
+        </a>
+            <nav class="header-nav">
+                <a class="header-item" href="index.html">genplan</a>
+                <a class="header-item" href="building-item.html">building</a>
+                <a class="header-item" href="floor-item.html">floor</a>
+                <a class="header-item" href="apartment-item.html">apartment</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main class="wrapper page-building-item">
+        <div class="container">
+            <h2>Оберіть поверх</h2>
+            <svg viewBox="0 0 2422 1188" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <image href="assets/img/building-item.png" />
+                <a href="floor-item.html" class="floor-item" data-address="вул. Лісова, 25"  data-floors="5" data-apartments-all="60"  data-apartments-free="10" data-apartments-action="3" data-apartments-reservation="2">
+         <path d="M189.5 841V834.5L1902.5 836H1917.5V839.5L1909 841L1910 1032.5L199 1036.5V841H189.5Z"/>
+      </a>
+                <a href="floor-item.html" class="floor-item" data-address="вул. Лісова, 25"  data-floors="5" data-apartments-all="60"  data-apartments-free="4" data-apartments-action="1" data-apartments-reservation="3">
+         <path d="M1917.5 840.5H188.5V834H210.5V789H271V756L199 739V721H1908.5V740L1855.5 756.5V788.5L1900.5 789.5V835.5H1917.5V840.5Z"/>
+      </a>
+                <a href="floor-item.html" class="floor-item" data-address="вул. Лісова, 25"  data-floors="5" data-apartments-all="60" data-apartments-free="0" data-apartments-action="0" data-apartments-reservation="5">
+         <path d="M200 720H1909V703.5L1919.5 699.5V695.5H1897.5V650H1854.5V628L1909 603.5V579.5H1175V603.5H821.5L793.5 579.5H200V598.5L271.5 627V649.5H208V695H189V702.5H198.5L200 704V720Z"/>
+      </a>
+                <a href="floor-item.html" class="floor-item" data-address="вул. Лісова, 25"  data-floors="5" data-apartments-all="60" data-apartments-free="1" data-apartments-action="0" data-apartments-reservation="5">
+         <path d="M200 566V578.5H793.5L821.5 602.5H1174V578.5H1909V560H1900V510H1855.5V499L1908.5 461V442.5H1177.5V423.5H820.5L808.5 408L796.5 392H200V462.5H263.5L267.5 524.5H209L210 554.5H188.5V558.5L200 566Z"/>
+      </a>
+                <a href="floor-item.html" class="floor-item" data-address="вул. Лісова, 25"  data-floors="5" data-apartments-all="60" data-apartments-free="5" data-apartments-action="3" data-apartments-reservation="1">
+         <path d="M1178.5 235.5V441.5H1908.5V426L1919.5 417.5V413.5H1900V371H1855.5V369.5L1909 319.5V235.5H1178.5Z"/>
+      </a>
+
+            </svg>
+        </div>
+
+    </main>
+    <footer>
+        <div class="container">
+            <h2>Інформація про поверх</h2>
+            <ul class="information-list">
+                <li class="information-item">
+                    <h4>Адреса:</h4>
+                    <div id="floor-information-address"></div>
+                </li>
+                <li class="information-item">
+                    <h4>Кількість поверхів:</h4>
+                    <div id="floor-information-floors"></div>
+                </li>
+                <li class="information-item">
+                    <h4>Загальна кількість квартир:</h4>
+                    <div id="floor-information-apartments-all"></div>
+                </li>
+                <li class="information-item">
+                    <h4>Кількість вільних квартир:</h4>
+                    <div id="floor-information-apartments-free"></div>
+                </li>
+                <li class="information-item">
+                    <h4>Залишилося акційних квартир:</h4>
+                    <div id="floor-information-apartments-action"></div>
+                </li>
+                <li class="information-item">
+                    <h4>Кількість заброньованих квартир:</h4>
+                    <div id="floor-information-apartments-reservation"></div>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <script async src="assets/js/custom.js"></script>
+</body>
+
+</html>
